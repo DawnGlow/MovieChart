@@ -1,0 +1,49 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.movie-section {
+    padding: 20px;
+}
+
+.movie-list {
+    display: flex;
+    gap: 20px;
+}
+
+.movie-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-item img {
+    width: 200px;
+    height: 300px;
+    transition: opacity 0.3s;
+}
+
+.movie-item:hover img {
+    opacity: 0.3;
+}
+
+.movie-item::after {
+    content: attr(data-rating) '점';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.movie-item:hover::after {
+    opacity: 1;
+}

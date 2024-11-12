@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 차트 웹 메인 페이지</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-dark">
+        <h1 class="text-white">메인페이지</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#">영화</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">극장</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">차트</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">나중에 볼 영화</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar d-flex">
+            <input type="text" class="form-control" placeholder="검색">
+            <button class="btn btn-secondary ml-2">검색</button>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <section class="movie-section">
+            <h2 class="text-white">국내 상영 순위 TOP 4</h2>
+            <div class="movie-list d-flex">
+                <div class="movie-item" data-rating="8.5">
+                    <img src="poster1.jpg" alt="영화 포스터">
+                </div>
+                <div class="movie-item" data-rating="7.8">
+                    <img src="poster2.jpg" alt="영화 포스터">
+                </div>
+                <div class="movie-item" data-rating="9.0">
+                    <img src="poster3.jpg" alt="영화 포스터">
+                </div>
+                <div class="movie-item" data-rating="8.2">
+                    <img src="poster4.jpg" alt="영화 포스터">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
